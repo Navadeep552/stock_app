@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
 from datetime import date
 import yfinance as yf
 from prophet import Prophet
@@ -104,4 +103,5 @@ if data is not None:
     st.pyplot(fig2)
 
 else:
+
     st.error("❌ Failed to load stock data. Please try another symbol.")
